@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="main2.css">
+        <title>電卓</title>
+      </head>
+      <body>
+        <form name="calc">
+          <table border="2">
+            <tr>
+              <th colspan="4" align="right">
+                <div id="out">0</div>
+              </th>
+            </tr>
+            <tr>
+              <td><input type="button" value="7" onClick="calc_run(7)"></td>
+              <td><input type="button" value="8" onClick="calc_run(8)"></td>
+              <td><input type="button" value="9" onClick="calc_run(9)"></td>
+              <td><input type="button" value="+" onClick="calc_run('+')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="4" onClick="calc_run(4)"></td>
+              <td><input type="button" value="5" onClick="calc_run(5)"></td>
+              <td><input type="button" value="6" onClick="calc_run(6)"></td>
+              <td><input type="button" value="-" onClick="calc_run('-')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" onClick="calc_run(1)"></td>
+              <td><input type="button" value="2" onClick="calc_run(2)"></td>
+              <td><input type="button" value="3" onClick="calc_run(3)"></td>
+              <td><input type="button" value="*" onClick="calc_run('*')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="0" onClick="calc_run(0)"></td>
+              <td><input type="button" value="00" onClick="calc_run('00')"></td>
+              <td><input type="button" value="." onClick="calc_period()"></td>
+              <td><input type="button" value="/" onClick="calc_run('/')"></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="AC" onClick="calc_clear('AC')"></td>
+              <td><input type="button" value="=" onClick="calc_equal()"></td>
+            </tr>
+          </table>
+        </form>
+        <script src="main2.js"></script>
+      </body>
+    </html>
